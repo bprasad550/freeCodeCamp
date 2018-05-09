@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+body{
+        background: url("https://i.stack.imgur.com/yDr7J.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.center{
+    font-family: 'Press Start 2P', cursive;
+    color: aliceblue;
+    text-align: center;
+   
+    padding-top: 12%;
+}
+#button{
+    padding-top: 2%;
+}
+#quote{
+    padding-top: 3%;
+}
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+ color: aliceblue;
+  text-align: center;
+}

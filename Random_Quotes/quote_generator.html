@@ -1,0 +1,55 @@
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        
+    
+    $(document).ready(function() {
+        
+        $("#button").click(function(){
+
+            var quotes = new Array();
+        quotes[0] = "Success is not final; failure is not fatal: It is the courage to continue that counts \ -- Winston Churchill";
+        quotes[1] = "It is better to fail in originality than to succeed in imitation";
+        quotes[2] = "The road to success and the road to failure are almost exactly the same";
+        quotes[3] = "Success usually comes to those who are too busy to be looking for it";
+        quotes[4] = "Opportunities don't happen. You create them";
+        quotes[5] = "Don't be afraid to give up the good to go for the great";
+        quotes[6] = "I find that the harder I work, the more luck I seem to have";
+        quotes[7] = "There are two types of people who will tell you that you cannot make a difference in this world: those who are afraid to try and those who are afraid you will succeed";
+        quotes[8] = "Successful people do what unsuccessful people are not willing to do. Don't wish it were easier; wish you were better";
+        quotes[9] = "Try not to become a man of success. Rather become a man of value";
+     
+        var myRandom = Math.floor(Math.random()*quotes.length);
+            
+            $('p').text(quotes[myRandom])
+                       
+                        });
+      
+});
+    </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="center">
+         <h1>Get Your Random Quote!</h1>
+                <div id="button">
+            <button type="button" class="btn btn-primary">Click Me!</button>
+                   <blockquote>
+                       <p id="quote"></p>
+                         
+                    </blockquote>
+                   
+                    </div>
+                </div>
+        </div>
+      <div class="footer">
+    <h6>©2018 A freeCodeCamp project by Bhanu Prasad</h6>
+  </div>
+    </body>
+</html>
